@@ -1,4 +1,4 @@
-# 자바 ORM 표준 JPA 프로그래밍(김영한님)
+# 자바 ORM 표준 JPA 프로그래밍
 
 ### 환경
 - Java 8 이상
@@ -18,14 +18,10 @@
 - 지루한 코드
 - 개발자는 SQL매퍼?
 
-***
-
 ## ORM?
 - Object-relational mapping
 - 객체는 객체대로,  RDB는 RDB대로 설계
 - ORM 프레임워크가 중간에서 매핑
-
-***
 
 ## JPA?
 - Java Persistence API
