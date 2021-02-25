@@ -17,6 +17,10 @@ public class Order {
     @JoinColumn(name = "MEMBER_ID")
     private Member member;
 
+    @OneToOne
+    @JoinColumn(name = "DELIVERY_ID")
+    private Delivery delivery;
+
     // 좋지 못한 코드?
     // 최대한 단방향으로만 설계!
     // 필요시에만 양방향으로
