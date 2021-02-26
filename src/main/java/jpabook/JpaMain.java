@@ -1,5 +1,7 @@
 package jpabook;
 
+import jpabook.domain.Book;
+import jpabook.domain.Movie;
 import jpabook.domain.Order;
 
 import javax.persistence.EntityManager;
@@ -17,6 +19,16 @@ public class JpaMain {
         tx.begin();
 
         try {
+//            Movie movie = new Movie();
+//            movie.setActor("jo");
+//            movie.setDirector("kim");
+//            em.persist(movie);
+
+            Book book = new Book();
+            book.setName("JPA");
+            book.setAuthor("김영한");
+            em.persist(book);
+
             tx.commit();
         } catch(Exception e) {
             tx.rollback();
